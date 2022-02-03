@@ -47,6 +47,11 @@ function getTotalCount(animals) {
  * getAllKinds([]); //> [] // returns empty array if input array is empty
  */
 function getAllKinds(animals) {
+  let species = []
+  for (const animal of animals) {
+    species.push(animal.kind);
+  }
+  return species
 }
 
 /**
